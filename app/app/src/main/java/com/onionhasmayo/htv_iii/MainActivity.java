@@ -1,20 +1,14 @@
 package com.onionhasmayo.htv_iii;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Camera;
-import android.hardware.camera2.CameraAccessException;
-import android.hardware.camera2.CameraCharacteristics;
-import android.hardware.camera2.CameraDevice;
-import android.hardware.camera2.CameraManager;
-import android.hardware.camera2.CameraMetadata;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.onionhasmayo.htv_iii.camera.CameraActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void invokeCamera() {
-        Intent intent = new Intent(this,CameraActivity.class);
+        Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);
     }
 

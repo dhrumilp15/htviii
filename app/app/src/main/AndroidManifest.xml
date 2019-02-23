@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CameraActivity"
+            android:name=".camera.CameraActivity"
             android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".MainActivity"
